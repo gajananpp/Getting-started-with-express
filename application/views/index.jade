@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container
+    form(method="",action="",role="form")
+     input#input.form-control(type= "text", placeholder ="enter something")
+     br
+     input#submit.btn.btn-default(type="submit")
+    br
+    #results
+  script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+  script(src='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js')
+  script(src='/javascripts/main.js')
